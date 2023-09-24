@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    password: etudiantdb
+    password: ${MYSQL_LOCAL_PASSWORD}
     url: jdbc:mysql://localhost:3306/gestion_utilisateur?serverTimezone=UTC&useLegacyDatetimeCode=false
-    username: etudiantdb
+    username: ${MYSQL_LOCAL_USERNAME}
   jpa:
     hibernate:
       ddl-auto: update
